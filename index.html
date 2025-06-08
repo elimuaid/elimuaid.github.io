@@ -111,118 +111,129 @@
 			 
 			<!-- Start project Area -->
 			<section class="project-area section-gap" id="project">
-				<div class="container">
-					<div class="row d-flex justify-content-center">
-					<div class="col-md-8 pb-80 header-text text-center">
-						<h1>Our Projects</h1>
-						<p>At elimu-Aid, we are committed to supporting students holistically throughout their academic journey.</p>
-					</div>
-					</div>
-					
-					<div class="row justify-content-center d-flex align-items-stretch">
-					
-					<!-- Project Card 1 -->
-					<div class="col-lg-6 col-md-6 mb-4 d-flex">
-						<div class="single-project text-center">
-						<div class="content">
-							<a href="#" target="_blank">
-							<div class="content-overlay"></div>
-							<img class="content-image img-fluid mx-auto d-block" src="img/meal_card.png" alt="">
-							<div class="content-details fadeIn-bottom">
-								<a href="#" class="head-btn btn text-uppercase">Donate Now</a>
-							</div>
-							</a>
-						</div>
-						<div class="details mt-3">
-							<h2>End of Semester Meal Card</h2>
-							<p>Assisting students facing financial distress during exam periods — ensuring peace of mind.</p>
-							<a class="text-uppercase" href="#">read more</a>
-						</div>
-						</div>
-					</div>
+			<style>
+				/* Make all project cards equal height with flex layout */
+				.project-area .single-project {
+				display: flex;
+				flex-direction: column;
+				height: 100%;
+				}
 
-					<!-- Project Card 2 -->
-					<div class="col-lg-6 col-md-6 mb-4 d-flex">
-						<div class="single-project text-center">
-						<div class="content">
-							<a href="#" target="_blank">
-							<div class="content-overlay"></div>
-							<img class="content-image img-fluid mx-auto d-block" src="img/work_study.png" alt="">
-							<div class="content-details fadeIn-bottom">
-								<a href="#" class="head-btn btn text-uppercase">Donate Now</a>
-							</div>
-							</a>
-						</div>
-						<div class="details mt-3">
-							<h2>Part-time Work Study</h2>
-							<p>Support student upkeep through work-study programs.</p>
-							<a class="text-uppercase" href="#">read more</a>
-						</div>
-						</div>
-					</div>
+				/* Keep image container fixed height */
+				.project-area .single-project .content {
+				flex-shrink: 0;
+				}
 
-					<!-- Project Card 3 -->
-					<div class="col-lg-6 col-md-6 mb-4 d-flex">
-						<div class="single-project text-center">
-						<div class="content">
-							<a href="#" target="_blank">
-							<div class="content-overlay"></div>
-							<img class="content-image img-fluid mx-auto d-block" src="img/extra_curriculum.png" alt="">
-							<div class="content-details fadeIn-bottom">
-								<a href="#" class="head-btn btn text-uppercase">Donate Now</a>
-							</div>
-							</a>
-						</div>
-						<div class="details mt-3">
-							<h2>Extra-Curricular Activities</h2>
-							<p>Support student fun days, trophies, recollections, and chaplaincy activities.</p>
-							<a class="text-uppercase" href="#">read more</a>
-						</div>
-						</div>
-					</div>
+				/* Make details fill remaining space and align text nicely */
+				.project-area .single-project .details {
+				flex-grow: 1;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				}
 
-					<!-- Project Card 4 -->
-					<div class="col-lg-6 col-md-6 mb-4 d-flex">
-						<div class="single-project text-center">
-						<div class="content">
-							<a href="#" target="_blank">
-							<div class="content-overlay"></div>
-							<img class="content-image img-fluid mx-auto d-block" src="img/school_fee.png" alt="">
-							<div class="content-details fadeIn-bottom">
-								<a href="#" class="head-btn btn text-uppercase">Donate Now</a>
-							</div>
-							</a>
-						</div>
-						<div class="details mt-3">
-							<h2>Fee Arrears Support</h2>
-							<p>Help students clear fees to register, graduate, or sit exams without worry.</p>
-							<a class="text-uppercase" href="#">read more</a>
-						</div>
-						</div>
-					</div>
+				/* Fix all images to same height */
+				.project-area .content-image {
+				height: 200px; /* adjust this as needed */
+				object-fit: cover;
+				width: 100%;
+				}
+			</style>
 
+			<div class="container">
+				<div class="row d-flex justify-content-center">
+				<div class="col-md-8 pb-80 header-text text-center">
+					<h1>Our Projects</h1>
+					<p>At elimu-Aid, we are committed to supporting students holistically throughout their academic journey.</p>
+				</div>
+				</div>
+
+				<div class="row justify-content-center d-flex align-items-stretch">
+
+				<!-- Project Card 1 -->
+				<div class="col-lg-6 col-md-6 mb-4 d-flex">
+					<div class="single-project text-center">
+					<div class="content">
+						<a href="#" target="_blank">
+						<div class="content-overlay"></div>
+						<img class="content-image img-fluid mx-auto d-block" src="img/meal_card.png" alt="">
+						<div class="content-details fadeIn-bottom">
+							<a href="#" class="head-btn btn text-uppercase">Donate Now</a>
+						</div>
+						</a>
+					</div>
+					<div class="details mt-3">
+						<h2>End of Semester Meal Card</h2>
+						<p>Assisting students facing financial distress during exam periods — ensuring peace of mind.</p>
+						<a class="text-uppercase" href="#">read more</a>
+					</div>
 					</div>
 				</div>
-			</section>
-			<!-- Start about Area -->
 
-			<section class="about-area" id="about">
-				<div class="container"> <!-- changed from container-fluid -->
-					<div class="row d-flex align-items-center">
-						<!-- <div class="col-lg-6 col-md-12 about-left ps-lg-5 pe-lg-3 mb-4 mb-lg-0">
-							<img class="img-fluid" src="img/about_elimuaid.png" alt="">
-						</div> -->
-						<div class="col-lg-6 col-md-12 about-right">
-							<h1> Our Partners</h1>
-							<p>University 1</p>
-							<br>
-							<p>University 2
-							</p>
-							<button class="primary-btn mt-20 text-uppercase">learn more<span class="lnr lnr-arrow-right"></span></button>
+				<!-- Project Card 2 -->
+				<div class="col-lg-6 col-md-6 mb-4 d-flex">
+					<div class="single-project text-center">
+					<div class="content">
+						<a href="#" target="_blank">
+						<div class="content-overlay"></div>
+						<img class="content-image img-fluid mx-auto d-block" src="img/work_study.png" alt="">
+						<div class="content-details fadeIn-bottom">
+							<a href="#" class="head-btn btn text-uppercase">Donate Now</a>
 						</div>
+						</a>
+					</div>
+					<div class="details mt-3">
+						<h2>Part-time Work Study</h2>
+						<p>Support student upkeep through work-study programs.</p>
+						<a class="text-uppercase" href="#">read more</a>
+					</div>
 					</div>
 				</div>
+
+				<!-- Project Card 3 -->
+				<div class="col-lg-6 col-md-6 mb-4 d-flex">
+					<div class="single-project text-center">
+					<div class="content">
+						<a href="#" target="_blank">
+						<div class="content-overlay"></div>
+						<img class="content-image img-fluid mx-auto d-block" src="img/extra_curriculum.png" alt="">
+						<div class="content-details fadeIn-bottom">
+							<a href="#" class="head-btn btn text-uppercase">Donate Now</a>
+						</div>
+						</a>
+					</div>
+					<div class="details mt-3">
+						<h2>Extra-Curricular Activities</h2>
+						<p>Support student fun days, trophies, recollections, and chaplaincy activities.</p>
+						<a class="text-uppercase" href="#">read more</a>
+					</div>
+					</div>
+				</div>
+
+				<!-- Project Card 4 -->
+				<div class="col-lg-6 col-md-6 mb-4 d-flex">
+					<div class="single-project text-center">
+					<div class="content">
+						<a href="#" target="_blank">
+						<div class="content-overlay"></div>
+						<img class="content-image img-fluid mx-auto d-block" src="img/school_fee.png" alt="">
+						<div class="content-details fadeIn-bottom">
+							<a href="#" class="head-btn btn text-uppercase">Donate Now</a>
+						</div>
+						</a>
+					</div>
+					<div class="details mt-3">
+						<h2>Fee Arrears Support</h2>
+						<p>Help students clear fees to register, graduate, or sit exams without worry.</p>
+						<a class="text-uppercase" href="#">read more</a>
+					</div>
+					</div>
+				</div>
+
+				</div>
+			</div>
 			</section>
+
 			<!-- End about Area -->
 
 			<!-- Start volunteer Area -->
