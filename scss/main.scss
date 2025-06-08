@@ -21,44 +21,32 @@
 @import "theme/header";
 @import "theme/home";
 @import "theme/footer";
-
 .single-project {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   height: 100%;
   background: #fff;
-  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+  padding: 20px;
   border-radius: 8px;
-  overflow: hidden;
-  padding-bottom: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
 }
 
-.single-project .content-image {
-  height: 220px;
+.content-image {
+  height: 250px;
   object-fit: cover;
   width: 100%;
-  border-bottom: 1px solid #eee;
+  border-radius: 6px;
 }
 
-.single-project .details {
-  padding: 20px;
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.details {
+  margin-top: auto;
 }
 
-.single-project .details h2 {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.single-project .details p {
-  font-size: 15px;
-  margin-bottom: 15px;
-}
-
-.single-project .head-btn {
-  margin-top: 10px;
+.content-details {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
